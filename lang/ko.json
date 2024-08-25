@@ -1,0 +1,16 @@
+{
+    "CCFORIA.ChatGuide": "메시지를 입력",
+    "CCFORIA.AddTokenToScene": "화면",
+    "CCFORIA.AddTokenToSceneDisplay": "토큰을 화면에 추가",
+
+    "CCFORIA.Init": "이니셔티브",
+    "CCFORIA.Label": "라벨",
+    "CCFORIA.isValue": "값",
+    "CCFORIA.Value": "현재값",
+    "CCFORIA.Max": "최대값",
+
+    "CCFORIA.AddStatus": "스테이터스 추가",
+    "CCFORIA.RemoveStatus": "스테이터스 삭제"
+
+
+}

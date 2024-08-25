@@ -1,0 +1,32 @@
+{
+    "id": "ccforia-style-ui",
+    "compatibility": {
+        "minimum": "11",
+        "verified": "11.315"
+    },
+    "title": "CCFORIA style UI",
+    "description": "UI Module Inspired by CCFORIA",
+    "version": "0.1",
+    "authors": [
+        {
+            "name": "ltaeng",
+            "email": "ksx0330@gmail.com",
+            "discord": "ltaeng",
+            "flags": {}
+        }
+    ],
+    "esmodules": [
+      "module/init.js"
+    ],
+    "languages": [
+        {
+            "lang": "ko",
+            "name": "Korean",
+            "path": "lang/ko.json"
+        }
+    ],
+    "styles": [
+        "style/style.css"
+    ],
+    "packs": []
+}
