@@ -6,7 +6,7 @@ export class StatusDialog extends Dialog {
         super(options);
 
         this.token = token;
-        this.status = duplicate(this.token.getFlag("ccforia-style-ui", "status"));
+        this.status = duplicate(this.token.getFlag("ccfolia-style-ui", "status"));
 
         this.data = {
             title: token.name,
@@ -19,7 +19,7 @@ export class StatusDialog extends Dialog {
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
             template: "templates/hud/dialog.html",
-            classes: ["ccforia-style-ui", "dialog"],
+            classes: ["ccfolia-style-ui", "dialog"],
             width: 400
         });
     }

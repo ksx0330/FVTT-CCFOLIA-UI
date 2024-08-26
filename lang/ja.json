@@ -1,16 +1,16 @@
 {
-    "CCFORIA.ChatGuide": "メッセージを入力",
-    "CCFORIA.AddTokenToScene": "画面",
-    "CCFORIA.AddTokenToSceneDisplay": "トークンを画面に追加",
+    "CCFOLIA.ChatGuide": "メッセージを入力",
+    "CCFOLIA.AddTokenToScene": "画面",
+    "CCFOLIA.AddTokenToSceneDisplay": "トークンを画面に追加",
 
-    "CCFORIA.Init": "イニシアチブ",
-    "CCFORIA.Label": "ラベル",
-    "CCFORIA.isValue": "値",
-    "CCFORIA.Value": "現在値",
-    "CCFORIA.Max": "最大値",
+    "CCFOLIA.Init": "イニシアチブ",
+    "CCFOLIA.Label": "ラベル",
+    "CCFOLIA.isValue": "値",
+    "CCFOLIA.Value": "現在値",
+    "CCFOLIA.Max": "最大値",
 
-    "CCFORIA.AddStatus": "ステータスを追加",
-    "CCFORIA.RemoveStatus": "ステータスを削除"
+    "CCFOLIA.AddStatus": "ステータスを追加",
+    "CCFOLIA.RemoveStatus": "ステータスを削除"
 
 
 }

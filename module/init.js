@@ -8,7 +8,7 @@ Hooks.once("ready", () => {
     let sidebar = $("#sidebar");
     sidebar.addClass("ccf");
 
-    $("#chat-message").attr("placeholder", game.i18n.localize("CCFORIA.ChatGuide"));
+    $("#chat-message").attr("placeholder", game.i18n.localize("CCFOLIA.ChatGuide"));
 
     $("#ui-top").append(`<div id="ccf-header" class="flexrow"></div>`);
     $("#ui-top #ccf-header").append($("#navigation"));
@@ -69,13 +69,13 @@ Hooks.on("createChatMessage", (message, options, id) => {
         let actor = game.actors.get(message.speaker.actor);
         portrait = actor.img;
     }
-    message.setFlag("ccforia-style-ui", "portrait", portrait);
+    message.setFlag("ccfolia-style-ui", "portrait", portrait);
 });
 
 Hooks.on("renderChatMessage", (message, html, data) => {
     let portrait = message.user.avatar;
-    if (message.getFlag("ccforia-style-ui", "portrait") != null)
-        portrait = message.getFlag("ccforia-style-ui", "portrait");
+    if (message.getFlag("ccfolia-style-ui", "portrait") != null)
+        portrait = message.getFlag("ccfolia-style-ui", "portrait");
 
     html.css("display", "flex");
     html.children().wrapAll(`<div class="ccf-content"></div>`);
@@ -85,29 +85,29 @@ Hooks.on("renderChatMessage", (message, html, data) => {
 });
 
 Hooks.on("renderTokenConfig", (tokenConfig, html, options) => {
-    html.find("nav.sheet-tabs.tabs").first().append(`<a class="item" data-tab="ccf-token-status"><i class="fas fa-user-plus"></i>${game.i18n.localize("CCFORIA.AddTokenToScene")}</a>`)
+    html.find("nav.sheet-tabs.tabs").first().append(`<a class="item" data-tab="ccf-token-status"><i class="fas fa-user-plus"></i>${game.i18n.localize("CCFOLIA.AddTokenToScene")}</a>`)
     html.find("footer.sheet-footer.flexrow").before(`<div class="tab" data-group="main" data-tab="ccf-token-status"></div>`);
 
-    let tokenStatus = tokenConfig.object.getFlag("ccforia-style-ui", "status");
+    let tokenStatus = tokenConfig.object.getFlag("ccfolia-style-ui", "status");
     if (tokenStatus == null) {
         tokenStatus = {
             check: false,
             init: "",
             status: []
         }
-        tokenConfig.object.setFlag("ccforia-style-ui", "status", tokenStatus);
+        tokenConfig.object.setFlag("ccfolia-style-ui", "status", tokenStatus);
     }
 
     let tab = html.find('.tab[data-tab="ccf-token-status"]');
     tab.append(`
         <div class="form-group">
-            <label>${game.i18n.localize("CCFORIA.AddTokenToSceneDisplay")}</label>
+            <label>${game.i18n.localize("CCFOLIA.AddTokenToSceneDisplay")}</label>
             <input type="checkbox" name="ccf-showActor" ${tokenStatus.check ? "checked" : ""}/>
         </div>
 
         <div class="form-group">
-            <label>${game.i18n.localize("CCFORIA.Init")}</label>
-            <input type="text" name="ccf-init" placeholder="${game.i18n.localize("CCFORIA.Init")}" value="${tokenStatus.init}" data-dtype="String"/>
+            <label>${game.i18n.localize("CCFOLIA.Init")}</label>
+            <input type="text" name="ccf-init" placeholder="${game.i18n.localize("CCFOLIA.Init")}" value="${tokenStatus.init}" data-dtype="String"/>
         </div>
     `);
 
@@ -121,11 +121,11 @@ Hooks.on("renderTokenConfig", (tokenConfig, html, options) => {
         tab.append(`
             <header class="ccf-status">
                 <div class="flexrow">
-                    <div class="ccf-label">${game.i18n.localize("CCFORIA.Label")}</div>
-                    <div class="ccf-check">${game.i18n.localize("CCFORIA.isValue")}</div>
-                    <div class="ccf-value">${game.i18n.localize("CCFORIA.Value")} / ${game.i18n.localize("CCFORIA.Max")}</div>
+                    <div class="ccf-label">${game.i18n.localize("CCFOLIA.Label")}</div>
+                    <div class="ccf-check">${game.i18n.localize("CCFOLIA.isValue")}</div>
+                    <div class="ccf-value">${game.i18n.localize("CCFOLIA.Value")} / ${game.i18n.localize("CCFOLIA.Max")}</div>
                     <div class="ccf-controls">
-                        <a class="action-button" data-action="addStatus" data-tooltip="${game.i18n.localize("CCFORIA.AddStatus")}">
+                        <a class="action-button" data-action="addStatus" data-tooltip="${game.i18n.localize("CCFOLIA.AddStatus")}">
                             <i class="fa-solid fa-plus"></i>
                         </a>
                     </div>
@@ -185,7 +185,7 @@ Hooks.on("renderTokenConfig", (tokenConfig, html, options) => {
                             ${minContent}
                         </div>
                         <div class="ccf-controls">
-                            <a class="action-button" data-action="removeStatus" data-tooltip="${game.i18n.localize("CCFORIA.RemoveStatus")}">
+                            <a class="action-button" data-action="removeStatus" data-tooltip="${game.i18n.localize("CCFOLIA.RemoveStatus")}">
                                 <i class="fa-solid fa-times"></i>
                             </a>
                         </div>
@@ -246,7 +246,7 @@ Hooks.on("renderTokenConfig", (tokenConfig, html, options) => {
     html.find("button[type=submit]").click(() => {
         const submitData = tokenConfig._getSubmitData();
         const status = Object.values(foundry.utils.expandObject(submitData)?.ccfStatus || {});
-        tokenConfig.object.setFlag("ccforia-style-ui", "status", {
+        tokenConfig.object.setFlag("ccfolia-style-ui", "status", {
             check: submitData["ccf-showActor"],
             init: submitData["ccf-init"],
             status: status
@@ -278,7 +278,7 @@ function renderTokenViewer() {
         if (token.actor == null)
             continue;
 
-        let status = duplicate(token.getFlag("ccforia-style-ui", "status"));
+        let status = duplicate(token.getFlag("ccfolia-style-ui", "status"));
         if (status != null && status.check) {
             status.init = (status.init == "") ? -999 : getData(token, status.init);
             status.token = token;

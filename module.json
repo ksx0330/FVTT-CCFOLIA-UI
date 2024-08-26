@@ -1,11 +1,11 @@
 {
-    "id": "ccforia-style-ui",
+    "id": "ccfolia-style-ui",
     "compatibility": {
         "minimum": "11",
         "verified": "11.315"
     },
-    "title": "CCFORIA style UI",
-    "description": "UI Module Inspired by CCFORIA",
+    "title": "CCFOLIA style UI",
+    "description": "UI Module Inspired by CCFOLIA",
     "version": "0.1",
     "authors": [
         {
