@@ -23,6 +23,11 @@
             "lang": "ko",
             "name": "Korean",
             "path": "lang/ko.json"
+        },
+        {
+            "lang": "ja",
+            "name": "Japanese",
+            "path": "lang/ja.json"
         }
     ],
     "styles": [
