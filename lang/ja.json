@@ -1,0 +1,16 @@
+{
+    "CCFOLIA.ChatGuide": "メッセージを入力",
+    "CCFOLIA.AddTokenToScene": "画面",
+    "CCFOLIA.AddTokenToSceneDisplay": "トークンを画面に追加",
+
+    "CCFOLIA.Init": "イニシアチブ",
+    "CCFOLIA.Label": "ラベル",
+    "CCFOLIA.isValue": "値",
+    "CCFOLIA.Value": "現在値",
+    "CCFOLIA.Max": "最大値",
+
+    "CCFOLIA.AddStatus": "ステータスを追加",
+    "CCFOLIA.RemoveStatus": "ステータスを削除"
+
+
+}
