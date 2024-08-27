@@ -34,7 +34,7 @@
         "style/style.css"
     ],
     "packs": [],
-    "url": "https://github.com/ksx0330/FVTT-CCFORIA-UI",
-    "manifest": "https://raw.githubusercontent.com/ksx0330/FVTT-CCFORIA-UI/main/system.json",
-    "download": "https://codeload.github.com/ksx0330/FVTT-CCFORIA-UI/zip/main"
+    "url": "https://github.com/ksx0330/FVTT-CCFOLIA-UI",
+    "manifest": "https://raw.githubusercontent.com/ksx0330/FVTT-CCFOLIA-UI/main/module.json",
+    "download": "https://codeload.github.com/ksx0330/FVTT-CCFOLIA-UI/zip/main"
 }
